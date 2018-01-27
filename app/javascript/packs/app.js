@@ -35,6 +35,9 @@
 
 import Vue from 'vue/dist/vue.esm'
 import App from '../components/app.vue'
+import Notebook from '../components/notebook.vue'
+
+Vue.filter('date', time => moment(time).format('DD/MM/YY, HH:mm'))
 
 document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({
@@ -46,7 +49,12 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 })
 
-
+document.addEventListener('DOMContentLoaded', () => {
+  const notebook = new Vue({
+    el: '#notebook',
+    components: { Notebook }
+  })
+})
 
 // If the using turbolinks, install 'vue-turbolinks':
 //
