@@ -42,7 +42,7 @@ Vue.filter('date', time => moment(time).format('DD/MM/YY, HH:mm'))
 document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({
     el: '#app',
-    components: { Notebook }
+    ...Notebook
   })
 })
 

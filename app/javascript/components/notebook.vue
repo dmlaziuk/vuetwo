@@ -165,22 +165,22 @@ export default {
 </script>
 
 <style>
-/* modified */
-/* body */
-#app {
-    font-family: sans-serif;
-    font-size: 16px;
-    height: 100%;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 .material-icons {
     font-size: 24px;
     line-height: 1;
     vertical-align: middle;
     margin: -3px;
     padding-bottom: 1px;
+}
+
+/* it was body, now it is #notebook */
+#notebook {
+    display: block;
+    font-family: sans-serif;
+    font-size: 16px;
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 #notebook > * {
@@ -282,7 +282,6 @@ textarea {
     font-family: monospace;
     /* added */
     min-height: 20rem;
-    height: auto;
 }
 
 textarea, .notes, .preview {
