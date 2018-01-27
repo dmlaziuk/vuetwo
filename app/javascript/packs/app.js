@@ -34,15 +34,15 @@
 
 
 import Vue from 'vue/dist/vue.esm'
-import App from '../components/app.vue'
+import Notebook from '../components/notebook.vue'
 import moment from 'moment'
 
 Vue.filter('date', time => moment(time).format('DD/MM/YY, HH:mm'))
 
 document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({
-    el: '#my',
-    components: { App }
+    el: '#app',
+    components: { Notebook }
   })
 })
 

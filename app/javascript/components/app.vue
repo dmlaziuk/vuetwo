@@ -1,7 +1,5 @@
 <template>
-  <div id="app">
-    <notebook/>
-  </div>
+  <notebook/>
 </template>
 
 <script>

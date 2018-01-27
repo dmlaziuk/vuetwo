@@ -16,7 +16,7 @@
                 star
               </i>
               {{note.title}}
-          </div>
+          </div> 
         </div>
       </div>
     </aside>
@@ -165,7 +165,9 @@ export default {
 </script>
 
 <style>
-body {
+/* modified */
+/* body */
+#app {
     font-family: sans-serif;
     font-size: 16px;
     height: 100%;
@@ -259,6 +261,7 @@ input {
 
 .main, .preview {
     width: 40%;
+    height: 50%;
 }
 
 .toolbar {
@@ -277,6 +280,9 @@ textarea {
     box-sizing: border-box;
     margin: 0 4px;
     font-family: monospace;
+    /* added */
+    min-height: 20rem;
+    height: auto;
 }
 
 textarea, .notes, .preview {
