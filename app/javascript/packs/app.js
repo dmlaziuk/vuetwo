@@ -35,15 +35,13 @@
 
 import Vue from 'vue/dist/vue.esm'
 import App from '../components/app.vue'
+import moment from 'moment'
 
 Vue.filter('date', time => moment(time).format('DD/MM/YY, HH:mm'))
 
 document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({
-    el: '#app',
-    data: {
-      message: "Can you say hello?"
-    },
+    el: '#my',
     components: { App }
   })
 })

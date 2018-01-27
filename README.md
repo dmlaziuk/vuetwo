@@ -32,9 +32,15 @@ $ chmod +x ./server
 $ cd ..
 $ rails g controller hello index
 ```
-Modify `routes.rb`:
+
+Add to `routes.rb`:
 ```
 root ‘hello#index’
+```
+
+Add to `Gemfile`:
+```
+gem 'foreman'
 ```
 
 Create `app/javascript/packs/app.js`:
@@ -108,6 +114,7 @@ Modify `app/views/hello/index.html.erb`:
 
 ### Runing app
 ```
+$ bundle
 $ ./bin/server
 ```
 Open it in browser [localhost:5000](localhost:5000).
