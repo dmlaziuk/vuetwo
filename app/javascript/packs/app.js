@@ -35,7 +35,6 @@
 
 import Vue from 'vue/dist/vue.esm'
 import App from '../components/app.vue'
-// import Notebook from '../components/notebook.vue'
 
 Vue.filter('date', time => moment(time).format('DD/MM/YY, HH:mm'))
 

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
    <!-- <p>{{ message }}</p> -->
-    <notebook></notebook>
+    <notebook/>
   </div>
 </template>
 
