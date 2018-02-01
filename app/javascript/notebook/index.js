@@ -18,7 +18,6 @@
 //   console.log(app)
 // })
 
-
 // The above code uses Vue without the compiler, which means you cannot
 // use Vue to target elements in your existing html templates. You would
 // need to always use single file components.
@@ -32,15 +31,15 @@
 //   <app></app>
 // </div>
 
-
 import Vue from 'vue/dist/vue.esm'
-import Notebook from '../components/notebook.vue'
+import Notebook from './components/notebook.vue'
 import moment from 'moment'
+import './styles/notebook'
 
 Vue.filter('date', time => moment(time).format('DD/MM/YY, HH:mm'))
 
 document.addEventListener('DOMContentLoaded', () => {
-  const app = new Vue({
+  return new Vue({
     el: '#app',
     ...Notebook
   })
